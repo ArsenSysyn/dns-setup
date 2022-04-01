@@ -1,7 +1,11 @@
 # Step-by-step of configuration DNS using bind9
-
-# Our working model
+---
+Our working model
 ![working model](screenshots/Model.png)
+
+---
+Configuration
+
 First of all we need to install bind9 on our Debian server:
 ```
 apt-get install bind9 -y
