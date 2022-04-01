@@ -154,4 +154,5 @@ root@external1:~# dig web1.ars +short TXT
 ```
 ---
 __P.S.__
+
 If you wanna to check more information how to configure DNS server using bind9 you can check official documentation https://bind9.readthedocs.io/en/latest/
