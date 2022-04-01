@@ -52,6 +52,7 @@ zone "33.168.192.in-addr.arpa" {
 };
 ```
 Type that we use it is master, or slave if we using some chile machines for our server and we specify there file with records.
+
 2. Configure zone file for A, TXT, SOA etc. records. This is will be file __db.local__ but in can be any
 ```
 root@dns:/etc/bind# cat db.local
@@ -74,6 +75,7 @@ nginx   IN      CNAME   web1
 web1    IN      TXT     "Example of info record for web1"
 ```
 There we create 3 A records, 2 of them for our webservers, and another one for NS(Name System) server - it is IP address of our DNS server. We need it for correct work of DNS resolver. CNAME record it is just like synonym
+
 3. Configure zone file for PTR records for resolving ip --> domain name. There we use file __db.192__ (It is like reverse A record, AAAA also can be)
 ```
 root@dns:/etc/bind# cat db.192
@@ -93,6 +95,7 @@ $TTL    604800
 20      IN      PTR     web2.ars.
 ```
 There we have 2 PTR records and we do that, if client will do request by ip address, not by domain name. And DNS server resolve ip address and it will give for our client domain name.
+
 4. Save all files and check if our syntax is correct using command
 ```
 named-checkconf
