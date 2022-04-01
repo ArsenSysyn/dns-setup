@@ -4,7 +4,7 @@ Our working model
 ![working model](screenshots/Model.png)
 
 ---
-Configuration
+__Configuration__
 
 First of all we need to install bind9 on our Debian server:
 ```
@@ -103,14 +103,15 @@ named-checkconf
 systemctl restart bind9
 ```
 
-
-###Clients of our DNS server
+---
+__Clients of our DNS server__
 For our clients we need to specify the DNS server in our system. 
 For example in Linux systems we can specify it in file __/etc/resolv.conf__
 ```
 nameserver 192.168.33.30
 ```
-###Testing
+---
+__Testing__
 And now we can test it using some networking CLI tools in Linux to test our DNS server. 
 There we are checking some A, CNAME, TXT records.
 1. NSLOOKUP tool
@@ -149,6 +150,6 @@ root@external1:~# dig web2.ars +short
 root@external1:~# dig web1.ars +short TXT
 "Example of info record for web1"
 ```
-
-###P.S.
+---
+__P.S.__
 If you wanna to check more information how to configure DNS server using bind9 you can check official documentation https://bind9.readthedocs.io/en/latest/
