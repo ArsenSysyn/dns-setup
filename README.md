@@ -105,6 +105,7 @@ systemctl restart bind9
 
 ---
 __Clients of our DNS server__
+
 For our clients we need to specify the DNS server in our system. 
 For example in Linux systems we can specify it in file __/etc/resolv.conf__
 ```
@@ -112,6 +113,7 @@ nameserver 192.168.33.30
 ```
 ---
 __Testing__
+
 And now we can test it using some networking CLI tools in Linux to test our DNS server. 
 There we are checking some A, CNAME, TXT records.
 1. NSLOOKUP tool
