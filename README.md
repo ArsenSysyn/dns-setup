@@ -74,7 +74,7 @@ web2    IN      A       192.168.33.20
 nginx   IN      CNAME   web1
 web1    IN      TXT     "Example of info record for web1"
 ```
-There we create 3 A records, 2 of them for our webservers, and another one for NS(Name System) server - it is IP address of our DNS server. We need it for correct work of DNS resolver. CNAME record it is just like synonym
+There we create 1 NS record for our DNS server, 3 A records, 2 of them for our webservers, and another one for NS(Name System) server - it is IP address of our DNS server. We need it for correct work of DNS resolver. CNAME record it is just like synonym for name of A(AAAA) record.
 
 3. Configure zone file for PTR records for resolving ip --> domain name. There we use file __db.192__ (It is like reverse A record, AAAA also can be)
 ```
