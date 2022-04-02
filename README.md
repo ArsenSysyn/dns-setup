@@ -51,6 +51,7 @@ zone "33.168.192.in-addr.arpa" {
         file "/etc/bind/db.192";
 };
 ```
+There we have one forward zone for resolving domain name --> ip address, and one reverse zone for resolving ip address --> domain name.
 Type that we use it is master, or slave if we using some chile machines for our server and we specify there file with records.
 
 2. Configure zone file for A, TXT, SOA etc. records. This is will be file __db.local__ but in can be any
