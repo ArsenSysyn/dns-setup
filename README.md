@@ -99,7 +99,7 @@ There we have 2 PTR records and we do that, if client will do request by ip addr
 
 4. Save all files and check if our syntax is correct using command
 ```
-named-checkconf
+named-checkconf 
 ```
 
 5. Final step - restart our bind service using command
